@@ -43,7 +43,7 @@ jobs:
           git-push: 'false'
 
       # Push Terraform-docs changes
-      - uses: planetscale/ghcommit-action@v0.2.4
+      - uses: planetscale/ghcommit-action@v0.2.5
         # Run this step even if previous steps fails (there are changes to commit)
         # but skip when on forks
         if: ${{ !cancelled() && github.repository_owner == 'runatlantis' }}
